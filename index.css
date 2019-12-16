@@ -1,0 +1,143 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(143, 133, 133);
+}
+
+img {
+    width:100px;
+    height:100px;
+    position: absolute;
+    top:60px;
+}
+
+#klokker{
+    display:grid;
+    place-items: center;
+}
+
+main {
+    position: relative;
+    width: 700px;
+    height: 600px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: rgb(192, 177, 146) 15px solid;
+    border-radius: 12px;
+}
+
+main div {
+    position: absolute;
+    width: 2px;
+    height: 7px;
+    background-color: black;
+    color:white;
+    font-size:20px;
+}
+
+
+main #tolv{
+    position: absolute;
+    top:-17px;
+    color:rgb(143, 133, 133);
+    font-size:22px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+main #tre{
+    position: absolute;
+    top:255px;
+    left:616px;
+    color: rgb(143, 133, 133);
+    font-size:24px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+main #seks{
+    position: absolute;
+    top:534px;
+    left:345px;
+    color: rgb(143, 133, 133);;
+    font-size:22px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+main #ni{
+    position: absolute;
+    top:257px;
+    left:72px;
+    color: rgb(143, 133, 133);
+    font-size:22px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+#minuttviser {
+    position: absolute;
+    width: 6px;
+    height: 198px;
+    background-color: black;
+    bottom: 50%;
+    transform-origin: center bottom;
+    border-radius: 6px;
+}
+
+#timeviser {
+    position: absolute;
+    width: 7.5px;
+    height: 153px;
+    background-color: black;
+    bottom: 50%;
+    transform-origin: center bottom;
+    border-radius: 6px;
+}
+
+.sekundviser {
+    position: absolute;
+    width: 3px;
+    height: 224px;
+    background-color: black;
+    bottom: 50%;
+    transform-origin: bottom;
+    border-radius: 6px;
+}
+
+svg {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 350px; 
+}
+
+circle {
+    stroke:rgb(8, 8, 8);
+    stroke-width:3;
+    fill:black;
+    position: absolute;
+}
+
+#digitalklokke {
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    padding-top: 20px;
+}
+
+#datoDisplay {
+    font-family: 'Cormorant SC', serif;
+    font-weight:600;
+    font-size: 40px;
+    margin-bottom:21px;
+}
+
+@media(max-width:750px) {
+   #klokker{
+       transform: scale(0.6)
+   }
+   body{
+       max-height:100vh;
+   }
+}
